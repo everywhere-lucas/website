@@ -1,86 +1,104 @@
 {
   "site_url": "https://everywhere-lucas.netlify.app",
-  "email": "your@email.com",
-  "profile_image": "",
-  "share_image": "",
+  "email": "lucashere.ytube@gmail.com",
   "destinations": [
     {
       "code": "KOR",
-      "city": { "ko": "한국", "en": "Korea" },
-      "photo": "",
+      "city": {
+        "ko": "한국",
+        "en": "Korea"
+      },
       "hide": false
     },
     {
       "code": "JPN",
-      "city": { "ko": "일본", "en": "Japan" },
-      "photo": "",
+      "city": {
+        "ko": "일본",
+        "en": "Japan"
+      },
       "hide": false
     },
     {
       "code": "FRA",
-      "city": { "ko": "프랑스", "en": "France" },
-      "photo": "",
+      "city": {
+        "ko": "프랑스",
+        "en": "France"
+      },
       "hide": false
     },
     {
       "code": "ITA",
-      "city": { "ko": "이탈리아", "en": "Italy" },
-      "photo": "",
+      "city": {
+        "ko": "이탈리아",
+        "en": "Italy"
+      },
       "hide": false
     },
     {
       "code": "IDN",
-      "city": { "ko": "인도네시아", "en": "Indonesia" },
-      "photo": "",
+      "city": {
+        "ko": "인도네시아",
+        "en": "Indonesia"
+      },
       "hide": false
     },
     {
       "code": "THA",
-      "city": { "ko": "태국", "en": "Thailand" },
-      "photo": "",
+      "city": {
+        "ko": "태국",
+        "en": "Thailand"
+      },
       "hide": false
     },
     {
       "code": "ZAF",
-      "city": { "ko": "남아공", "en": "South Africa" },
-      "photo": "",
+      "city": {
+        "ko": "남아공",
+        "en": "South Africa"
+      },
       "hide": false
     },
     {
       "code": "AUS",
-      "city": { "ko": "호주", "en": "Australia" },
-      "photo": "",
+      "city": {
+        "ko": "호주",
+        "en": "Australia"
+      },
       "hide": false
     },
     {
       "code": "DEU",
-      "city": { "ko": "독일", "en": "Germany" },
-      "photo": "",
+      "city": {
+        "ko": "독일",
+        "en": "Germany"
+      },
       "hide": false
     },
     {
       "code": "CHN",
-      "city": { "ko": "중국", "en": "China" },
-      "photo": "",
+      "city": {
+        "ko": "중국",
+        "en": "China"
+      },
       "hide": false
     }
   ],
   "channels": [
     {
-      "main": true,
       "name": {
         "ko": "루카스 여행",
         "en": "Lucas Travel"
+      },
+      "label": {
+        "ko": "메인 채널",
+        "en": "Main channel"
       },
       "handle": {
         "ko": "Instagram @everywhere.lucas",
         "en": "Instagram @everywhere.lucas"
       },
       "url": "https://instagram.com/everywhere.lucas",
-      "label": {
-        "ko": "메인 채널",
-        "en": "Main channel"
-      },
+      "main": true,
       "hide": false
     },
     {
@@ -88,15 +106,15 @@
         "ko": "먹눈사람",
         "en": "Meoknunsaram"
       },
+      "label": {
+        "ko": "대전 맛집 · 카페 · 핫플",
+        "en": "Daejeon food, cafés & hot spots"
+      },
       "handle": {
         "ko": "Instagram",
         "en": "Instagram"
       },
       "url": "#",
-      "label": {
-        "ko": "대전 맛집 · 카페 · 핫플",
-        "en": "Daejeon food, cafés & hot spots"
-      },
       "main": false,
       "hide": false
     },
@@ -105,15 +123,15 @@
         "ko": "루카 · Japan",
         "en": "루카 · Japan"
       },
+      "label": {
+        "ko": "일본여행 계정",
+        "en": "Japan travel account"
+      },
       "handle": {
         "ko": "일본여행 정보",
         "en": "Japan travel tips"
       },
       "url": "#",
-      "label": {
-        "ko": "일본여행 계정",
-        "en": "Japan travel account"
-      },
       "main": false,
       "hide": false
     },
@@ -122,15 +140,15 @@
         "ko": "YouTube",
         "en": "YouTube"
       },
+      "label": {
+        "ko": "쇼츠",
+        "en": "Shorts"
+      },
       "handle": {
         "ko": "Shorts",
         "en": "Shorts"
       },
       "url": "#",
-      "label": {
-        "ko": "쇼츠",
-        "en": "Shorts"
-      },
       "main": false,
       "hide": false
     },
@@ -139,15 +157,15 @@
         "ko": "TikTok",
         "en": "TikTok"
       },
+      "label": {
+        "ko": "틱톡",
+        "en": "TikTok"
+      },
       "handle": {
         "ko": "Short videos",
         "en": "Short videos"
       },
       "url": "#",
-      "label": {
-        "ko": "틱톡",
-        "en": "TikTok"
-      },
       "main": false,
       "hide": false
     },
@@ -156,15 +174,15 @@
         "ko": "Blog",
         "en": "Blog"
       },
+      "label": {
+        "ko": "여행 정보 블로그",
+        "en": "Travel blog"
+      },
       "handle": {
         "ko": "Travel notes",
         "en": "Travel notes"
       },
       "url": "#",
-      "label": {
-        "ko": "여행 정보 블로그",
-        "en": "Travel blog"
-      },
       "main": false,
       "hide": false
     }
@@ -198,7 +216,6 @@
   "videos": [
     {
       "region": "korea",
-      "views": 520000,
       "title": {
         "ko": "대전 사람만 아는 칼국수 골목",
         "en": "The kalguksu alley only locals know"
@@ -207,14 +224,13 @@
         "ko": "대전 중구",
         "en": "Jung-gu, Daejeon"
       },
+      "views": 520000,
       "url": "#",
-      "thumb": "",
       "map": "#",
       "hide": false
     },
     {
       "region": "korea",
-      "views": 310000,
       "title": {
         "ko": "성심당 말고 여기 가세요",
         "en": "Skip the famous bakery, go here"
@@ -223,14 +239,13 @@
         "ko": "대전 서구",
         "en": "Seo-gu, Daejeon"
       },
+      "views": 310000,
       "url": "#",
-      "thumb": "",
       "map": "#",
       "hide": false
     },
     {
       "region": "korea",
-      "views": 180000,
       "title": {
         "ko": "대전 당일치기 완벽 코스",
         "en": "Perfect day trip in Daejeon"
@@ -239,14 +254,12 @@
         "ko": "대전",
         "en": "Daejeon"
       },
+      "views": 180000,
       "url": "#",
-      "thumb": "",
-      "map": "",
       "hide": false
     },
     {
       "region": "korea",
-      "views": 120000,
       "title": {
         "ko": "비 오는 날 대전 실내 데이트",
         "en": "Rainy-day spots in Daejeon"
@@ -255,9 +268,8 @@
         "ko": "대전 유성구",
         "en": "Yuseong-gu, Daejeon"
       },
+      "views": 120000,
       "url": "#",
-      "thumb": "",
-      "map": "",
       "hide": false
     }
   ],
@@ -269,7 +281,6 @@
         "en": "One perfect day in Daejeon"
       },
       "url": "#",
-      "img": "",
       "hide": false
     },
     {
@@ -279,7 +290,6 @@
         "en": "First trip to Japan? Read this"
       },
       "url": "#",
-      "img": "",
       "hide": false
     },
     {
@@ -289,7 +299,6 @@
         "en": "How I film travel shorts"
       },
       "url": "#",
-      "img": "",
       "hide": false
     }
   ],
@@ -305,7 +314,6 @@
         "en": "40L but cabin-friendly — a week with just this"
       },
       "url": "#",
-      "img": "",
       "hide": false
     },
     {
@@ -319,7 +327,6 @@
         "en": "One plug for both Japan and Europe"
       },
       "url": "#",
-      "img": "",
       "hide": false
     },
     {
@@ -333,7 +340,6 @@
         "en": "Most of my shorts are shot on this"
       },
       "url": "#",
-      "img": "",
       "hide": false
     },
     {
@@ -347,7 +353,6 @@
         "en": "Halves the space in your luggage"
       },
       "url": "#",
-      "img": "",
       "hide": false
     },
     {
@@ -361,7 +366,6 @@
         "en": "Exchange rates and transit in one place"
       },
       "url": "#",
-      "img": "",
       "hide": false
     }
   ]
