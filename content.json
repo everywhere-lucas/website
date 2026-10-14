@@ -282,6 +282,7 @@
         "en": "Taipei Google Map"
       },
       "url": "https://maps.app.goo.gl/LURqWiFEKocMFKMVA",
+      "img": "images/루카스_대만.png",
       "hide": false
     },
     {
@@ -342,7 +343,8 @@
         "ko": "캐리어 공간 절반으로 줄여줌",
         "en": "Halves the space in your luggage"
       },
-      "url": "#",
+      "url": "https://link.coupang.com/a/hPTRxPVFam",
+      "img": "images/압축파우치.png",
       "hide": true
     }
   ]
