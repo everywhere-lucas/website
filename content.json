@@ -175,12 +175,12 @@
         "en": "Blog"
       },
       "label": {
-        "ko": "여행 정보 블로그",
-        "en": "Travel blog"
+        "ko": "루카스의 세계여행 아카이브",
+        "en": "Lucas's World Travel Archive"
       },
       "handle": {
-        "ko": "Travel notes",
-        "en": "Travel notes"
+        "ko": "Travel blog",
+        "en": "Travel blog"
       },
       "url": "https://blog.naver.com/lucas_travel",
       "main": false,
@@ -215,17 +215,17 @@
   ],
   "videos": [
     {
-      "region": "korea",
+      "region": "europe",
       "title": {
-        "ko": "대전 사람만 아는 칼국수 골목",
-        "en": "The kalguksu alley only locals know"
+        "ko": "피렌체의 낭만은 낮보다는 밤",
+        "en": "The real romance of Florence begins after dark"
       },
       "place": {
-        "ko": "대전 중구",
-        "en": "Jung-gu, Daejeon"
+        "ko": "피렌체",
+        "en": "Florence, Italy 🇮🇹"
       },
       "views": 520000,
-      "url": "#",
+      "url": "https://www.instagram.com/reel/DdOMHglOvEt/?xtok=MTZuZGhiY3F5N2JxbA==",
       "map": "#",
       "hide": false
     },
@@ -340,7 +340,7 @@
         "en": "Most of my shorts are shot on this"
       },
       "url": "#",
-      "hide": false
+      "hide": true
     },
     {
       "cat": "ESSENTIAL",
@@ -353,7 +353,7 @@
         "en": "Halves the space in your luggage"
       },
       "url": "#",
-      "hide": false
+      "hide": true
     },
     {
       "cat": "APP",
@@ -366,7 +366,7 @@
         "en": "Exchange rates and transit in one place"
       },
       "url": "#",
-      "hide": false
+      "hide": true
     }
   ]
 }
