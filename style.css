@@ -71,16 +71,19 @@
   .empty{background:#fff;border-radius:18px;padding:40px;text-align:center;color:var(--muted);grid-column:1/-1}
 
   /* ITEMS */
-  .item-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin}
-  .item{flex:0 0 240px;scroll-snap-align:start;border-radius:22px;background:#fff;border:1.5px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:.2s}
-  .item:hover{border-color:var(--blue);transform:translateY(-3px)}
-  .item .img{aspect-ratio:1/1;background:var(--soft);display:grid;place-items:center;color:var(--muted);font-size:13px;position:relative}
+  .item-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+#items{background:var(--soft)}
+.item{border-radius:22px;background:#fff;border:1.5px solid transparent;overflow:hidden;display:flex;flex-direction:column;transition:.25s;box-shadow:0 6px 20px rgba(21,70,255,.06)}
+.item:hover{border-color:var(--blue);transform:translateY(-3px)}
+  .item .img{aspect-ratio:1/1;background:linear-gradient(160deg,#EEF2FF,#DCE4FF);display:grid;place-items:center;color:var(--muted);font-size:13px;position:relative}
   .item .img img{width:100%;height:100%;object-fit:cover}
-  .item .cat{position:absolute;top:12px;left:12px;background:var(--ink);color:var(--neon);font-size:11px;font-weight:800;padding:5px 9px;border-radius:8px}
+  .item .cat{position:absolute;top:12px;left:12px;background:var(--neon);color:var(--ink);font-size:11px;font-weight:800;padding:5px 10px 5px 18px;border-radius:4px 10px 10px 4px}
+.item .cat::before{content:"";position:absolute;left:6px;top:50%;width:6px;height:6px;border-radius:50%;background:var(--soft);transform:translateY(-50%)}
   .item .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
   .item h3{font-size:16px;letter-spacing:-.02em}
   .item p{font-size:13px;color:var(--muted);flex:1}
-  .item .buy{margin-top:8px;text-align:center;background:var(--blue);color:#fff;font-weight:700;font-size:13px;padding:10px;border-radius:12px}
+  .item .buy{margin-top:8px;font-weight:800;font-size:13px;color:var(--blue)}
+.item:hover .buy{text-decoration:underline}
   .disclose{font-size:12px;color:var(--muted);margin-top:14px}
 
   /* GUIDES */
@@ -112,6 +115,9 @@
     .photo{max-width:300px}
     section{padding:56px 0}
     .guides{grid-template-columns:1fr}
+    .item-row{grid-template-columns:1fr 1fr;gap:10px}
+    .item .body{padding:12px 14px 14px}
+    .item h3{font-size:14px}
     .channels{grid-template-columns:1fr 1fr}
     .vid-grid{grid-template-columns:repeat(2,1fr);gap:10px}
     .vid h3{font-size:13px}
