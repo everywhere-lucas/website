@@ -1,4 +1,4 @@
-# everywhere.lucas 홈페이지
+# EVEREYWHERE 홈페이지 제작
 
 ## 내용 수정은 Pages CMS에서 (추천)
 1. https://app.pagescms.org 접속 → GitHub로 로그인
