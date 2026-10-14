@@ -119,6 +119,9 @@ def page(lang):
 <title>{e(s['title'])}</title>
 <meta name="description" content="{e(s['description'])}">
 <link rel="canonical" href="{url}">
+<link rel="icon" href="{pre}images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{pre}images/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="{pre}images/apple-touch-icon.png">
 <link rel="alternate" hreflang="ko" href="{SITE}">
 <link rel="alternate" hreflang="en" href="{SITE}en/">
 <link rel="alternate" hreflang="x-default" href="{SITE}">
