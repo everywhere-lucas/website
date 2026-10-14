@@ -215,7 +215,7 @@
   ],
   "videos": [
     {
-      "region": "europe",
+      "region": "Europe",
       "title": {
         "ko": "피렌체의 낭만은 낮보다는 밤",
         "en": "The real romance of Florence begins after dark"
@@ -231,7 +231,7 @@
       "hide": false
     },
     {
-      "region": "korea",
+      "region": "Korea",
       "title": {
         "ko": "성심당 말고 여기 가세요",
         "en": "Skip the famous bakery, go here"
@@ -353,19 +353,6 @@
       "why": {
         "ko": "캐리어 공간 절반으로 줄여줌",
         "en": "Halves the space in your luggage"
-      },
-      "url": "#",
-      "hide": true
-    },
-    {
-      "cat": "APP",
-      "name": {
-        "ko": "예시 여행 앱",
-        "en": "Sample travel app"
-      },
-      "why": {
-        "ko": "환율·교통 한 번에 해결",
-        "en": "Exchange rates and transit in one place "
       },
       "url": "#",
       "hide": true
