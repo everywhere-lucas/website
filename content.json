@@ -189,14 +189,6 @@
   ],
   "regions": [
     {
-      "id": "Europe",
-      "name": {
-        "ko": "유럽",
-        "en": "Europe"
-      },
-      "soon": false
-    },
-    {
       "id": "Korea",
       "name": {
         "ko": "한국",
@@ -209,6 +201,14 @@
       "name": {
         "ko": "일본",
         "en": "Japan"
+      },
+      "soon": true
+    },
+    {
+      "id": "Europe",
+      "name": {
+        "ko": "유럽",
+        "en": "Europe"
       },
       "soon": false
     }
@@ -305,16 +305,17 @@
   ],
   "items": [
     {
-      "cat": "BAG",
+      "cat": "ESSENTIAL",
       "name": {
-        "ko": "예시 기내용 백팩",
-        "en": "Sample carry-on backpack"
+        "ko": "여행용 샤워필터",
+        "en": "Travel Shower Filter"
       },
       "why": {
-        "ko": "40L인데 기내 반입 OK, 일주일 여행 이거 하나로",
-        "en": "40L but cabin-friendly — a week with just this"
+        "ko": "컴팩트한 사이즈로 여행 시 필수아이템 ",
+        "en": "Compact and Convenient – A Must-Have Travel Essential!"
       },
-      "url": "#",
+      "url": "https://link.coupang.com/a/hPPD1pMjqC",
+      "img": "images/저장.png",
       "hide": false
     },
     {
