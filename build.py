@@ -15,16 +15,16 @@ SITE = C["site_url"].rstrip("/") + "/"
 PATHS = {"ko": "", "en": "en/"}
 # content.json에 첫 화면 사진(destinations)이 없을 때 쓰는 기본값
 C.setdefault("destinations", [
-  { "code": "KOR", "city": { "ko": "한국", "en": "Korea" }, "photo": "", "hide": false },
-    { "code": "JPN", "city": { "ko": "일본", "en": "Japan" }, "photo": "", "hide": false },
-    { "code": "FRA", "city": { "ko": "프랑스", "en": "France" }, "photo": "", "hide": false },
-    { "code": "ITA", "city": { "ko": "이탈리아", "en": "Italy" }, "photo": "", "hide": false },
-    { "code": "IDN", "city": { "ko": "인도네시아", "en": "Indonesia" }, "photo": "", "hide": false },
-    { "code": "THA", "city": { "ko": "태국", "en": "Thailand" }, "photo": "", "hide": false },
-    { "code": "ZAF", "city": { "ko": "남아공", "en": "South Africa" }, "photo": "", "hide": false },
-    { "code": "AUS", "city": { "ko": "호주", "en": "Australia" }, "photo": "", "hide": false },
-    { "code": "DEU", "city": { "ko": "독일", "en": "Germany" }, "photo": "", "hide": false },
-    { "code": "CHN", "city": { "ko": "중국", "en": "China" }, "photo": "", "hide": false }
+  { "code": "KOR", "city": { "ko": "한국", "en": "Korea" }, "photo": "", "hide": False },
+    { "code": "JPN", "city": { "ko": "일본", "en": "Japan" }, "photo": "", "hide": False },
+    { "code": "FRA", "city": { "ko": "프랑스", "en": "France" }, "photo": "", "hide": False },
+    { "code": "ITA", "city": { "ko": "이탈리아", "en": "Italy" }, "photo": "", "hide": False },
+    { "code": "IDN", "city": { "ko": "인도네시아", "en": "Indonesia" }, "photo": "", "hide": False },
+    { "code": "THA", "city": { "ko": "태국", "en": "Thailand" }, "photo": "", "hide": False },
+    { "code": "ZAF", "city": { "ko": "남아공", "en": "South Africa" }, "photo": "", "hide": False },
+    { "code": "AUS", "city": { "ko": "호주", "en": "Australia" }, "photo": "", "hide": False },
+    { "code": "DEU", "city": { "ko": "독일", "en": "Germany" }, "photo": "", "hide": False },
+    { "code": "CHN", "city": { "ko": "중국", "en": "China" }, "photo": "", "hide": False }
 
 ])
 
