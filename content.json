@@ -86,8 +86,8 @@
   "channels": [
     {
       "name": {
-        "ko": "루카스 여행",
-        "en": "Lucas Travel"
+        "ko": "루카스 | 여행",
+        "en": "Lucas | Travel"
       },
       "label": {
         "ko": "메인 채널",
@@ -107,21 +107,21 @@
         "en": "food.snowman"
       },
       "label": {
-        "ko": "대전 맛집 · 카페 · 핫플",
+        "ko": "먹눈사람 | 대전맛집•대전카페•대전핫플•대전여행",
         "en": "Daejeon food, cafés & hot spots"
       },
       "handle": {
-        "ko": "Instagram",
-        "en": "Instagram"
+        "ko": "Instagram @food.snowman",
+        "en": "Instagram @food.snowman"
       },
-      "url": "#",
+      "url": "https://instagram.com/food.snowman",
       "main": false,
       "hide": false
     },
     {
       "name": {
-        "ko": "루카 · Japan",
-        "en": "루카 · Japan"
+        "ko": "루카(ルカ) | 일본여행 • 여행꿀팁",
+        "en": "Luca | Japan Travel • Travel Hacks"
       },
       "label": {
         "ko": "일본여행 계정",
@@ -131,7 +131,7 @@
         "ko": "일본여행 정보",
         "en": "Japan travel tips"
       },
-      "url": "#",
+      "url": "https://www.instagram.com/luca.trip.zip/",
       "main": false,
       "hide": false
     },
@@ -150,7 +150,7 @@
       },
       "url": "#",
       "main": false,
-      "hide": false
+      "hide": true
     },
     {
       "name": {
@@ -165,9 +165,9 @@
         "ko": "Short videos",
         "en": "Short videos"
       },
-      "url": "#",
+      "url": "https://www.tiktok.com/@lucasontravelon",
       "main": false,
-      "hide": false
+      "hide": true
     },
     {
       "name": {
@@ -182,14 +182,22 @@
         "ko": "Travel notes",
         "en": "Travel notes"
       },
-      "url": "#",
+      "url": "https://blog.naver.com/lucas_travel",
       "main": false,
       "hide": false
     }
   ],
   "regions": [
     {
-      "id": "korea",
+      "id": "Europe",
+      "name": {
+        "ko": "유럽",
+        "en": "Europe"
+      },
+      "soon": false
+    },
+    {
+      "id": "Korea",
       "name": {
         "ko": "한국",
         "en": "Korea"
@@ -197,20 +205,12 @@
       "soon": false
     },
     {
-      "id": "japan",
+      "id": "Japan",
       "name": {
         "ko": "일본",
         "en": "Japan"
       },
-      "soon": true
-    },
-    {
-      "id": "europe",
-      "name": {
-        "ko": "유럽",
-        "en": "Europe"
-      },
-      "soon": true
+      "soon": false
     }
   ],
   "videos": [
@@ -275,12 +275,12 @@
   ],
   "guides": [
     {
-      "tag": "DAEJEON",
+      "tag": "TAIWAN",
       "title": {
-        "ko": "대전 하루 코스 총정리",
-        "en": "One perfect day in Daejeon"
+        "ko": "타이베이 먹방지도",
+        "en": "Taipei Google Map"
       },
-      "url": "#",
+      "url": "https://maps.app.goo.gl/LURqWiFEKocMFKMVA",
       "hide": false
     },
     {
@@ -290,7 +290,7 @@
         "en": "First trip to Japan? Read this"
       },
       "url": "#",
-      "hide": false
+      "hide": true
     },
     {
       "tag": "TIP",
@@ -299,7 +299,7 @@
         "en": "How I film travel shorts"
       },
       "url": "#",
-      "hide": false
+      "hide": true
     }
   ],
   "items": [
