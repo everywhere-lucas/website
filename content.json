@@ -1,0 +1,306 @@
+{
+  "site_url": "https://everywhere-lucas.netlify.app",
+  "email": "your@email.com",
+  "profile_image": "",
+  "share_image": "",
+  "channels": [
+    {
+      "main": true,
+      "name": {
+        "ko": "루카스 여행",
+        "en": "Lucas Travel"
+      },
+      "handle": {
+        "ko": "Instagram @everywhere.lucas",
+        "en": "Instagram @everywhere.lucas"
+      },
+      "url": "https://instagram.com/everywhere.lucas",
+      "label": {
+        "ko": "메인 채널",
+        "en": "Main channel"
+      },
+      "hide": false
+    },
+    {
+      "name": {
+        "ko": "먹눈사람",
+        "en": "Meoknunsaram"
+      },
+      "handle": {
+        "ko": "Instagram",
+        "en": "Instagram"
+      },
+      "url": "#",
+      "label": {
+        "ko": "대전 맛집 · 카페 · 핫플",
+        "en": "Daejeon food, cafés & hot spots"
+      },
+      "main": false,
+      "hide": false
+    },
+    {
+      "name": {
+        "ko": "루카 · Japan",
+        "en": "루카 · Japan"
+      },
+      "handle": {
+        "ko": "일본여행 정보",
+        "en": "Japan travel tips"
+      },
+      "url": "#",
+      "label": {
+        "ko": "일본여행 계정",
+        "en": "Japan travel account"
+      },
+      "main": false,
+      "hide": false
+    },
+    {
+      "name": {
+        "ko": "YouTube",
+        "en": "YouTube"
+      },
+      "handle": {
+        "ko": "Shorts",
+        "en": "Shorts"
+      },
+      "url": "#",
+      "label": {
+        "ko": "쇼츠",
+        "en": "Shorts"
+      },
+      "main": false,
+      "hide": false
+    },
+    {
+      "name": {
+        "ko": "TikTok",
+        "en": "TikTok"
+      },
+      "handle": {
+        "ko": "Short videos",
+        "en": "Short videos"
+      },
+      "url": "#",
+      "label": {
+        "ko": "틱톡",
+        "en": "TikTok"
+      },
+      "main": false,
+      "hide": false
+    },
+    {
+      "name": {
+        "ko": "Blog",
+        "en": "Blog"
+      },
+      "handle": {
+        "ko": "Travel notes",
+        "en": "Travel notes"
+      },
+      "url": "#",
+      "label": {
+        "ko": "여행 정보 블로그",
+        "en": "Travel blog"
+      },
+      "main": false,
+      "hide": false
+    }
+  ],
+  "regions": [
+    {
+      "id": "korea",
+      "name": {
+        "ko": "한국",
+        "en": "Korea"
+      },
+      "soon": false
+    },
+    {
+      "id": "japan",
+      "name": {
+        "ko": "일본",
+        "en": "Japan"
+      },
+      "soon": true
+    },
+    {
+      "id": "europe",
+      "name": {
+        "ko": "유럽",
+        "en": "Europe"
+      },
+      "soon": true
+    }
+  ],
+  "videos": [
+    {
+      "region": "korea",
+      "views": 520000,
+      "title": {
+        "ko": "대전 사람만 아는 칼국수 골목",
+        "en": "The kalguksu alley only locals know"
+      },
+      "place": {
+        "ko": "대전 중구",
+        "en": "Jung-gu, Daejeon"
+      },
+      "url": "#",
+      "thumb": "",
+      "map": "#",
+      "hide": false
+    },
+    {
+      "region": "korea",
+      "views": 310000,
+      "title": {
+        "ko": "성심당 말고 여기 가세요",
+        "en": "Skip the famous bakery, go here"
+      },
+      "place": {
+        "ko": "대전 서구",
+        "en": "Seo-gu, Daejeon"
+      },
+      "url": "#",
+      "thumb": "",
+      "map": "#",
+      "hide": false
+    },
+    {
+      "region": "korea",
+      "views": 180000,
+      "title": {
+        "ko": "대전 당일치기 완벽 코스",
+        "en": "Perfect day trip in Daejeon"
+      },
+      "place": {
+        "ko": "대전",
+        "en": "Daejeon"
+      },
+      "url": "#",
+      "thumb": "",
+      "map": "",
+      "hide": false
+    },
+    {
+      "region": "korea",
+      "views": 120000,
+      "title": {
+        "ko": "비 오는 날 대전 실내 데이트",
+        "en": "Rainy-day spots in Daejeon"
+      },
+      "place": {
+        "ko": "대전 유성구",
+        "en": "Yuseong-gu, Daejeon"
+      },
+      "url": "#",
+      "thumb": "",
+      "map": "",
+      "hide": false
+    }
+  ],
+  "guides": [
+    {
+      "tag": "DAEJEON",
+      "title": {
+        "ko": "대전 하루 코스 총정리",
+        "en": "One perfect day in Daejeon"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    },
+    {
+      "tag": "JAPAN",
+      "title": {
+        "ko": "일본 처음 가는 사람 필독",
+        "en": "First trip to Japan? Read this"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    },
+    {
+      "tag": "TIP",
+      "title": {
+        "ko": "숏폼 여행 영상 찍는 법",
+        "en": "How I film travel shorts"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    }
+  ],
+  "items": [
+    {
+      "cat": "BAG",
+      "name": {
+        "ko": "예시 기내용 백팩",
+        "en": "Sample carry-on backpack"
+      },
+      "why": {
+        "ko": "40L인데 기내 반입 OK, 일주일 여행 이거 하나로",
+        "en": "40L but cabin-friendly — a week with just this"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    },
+    {
+      "cat": "TECH",
+      "name": {
+        "ko": "예시 멀티 어댑터",
+        "en": "Sample travel adapter"
+      },
+      "why": {
+        "ko": "일본·유럽 둘 다 되는 올인원",
+        "en": "One plug for both Japan and Europe"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    },
+    {
+      "cat": "TECH",
+      "name": {
+        "ko": "예시 짐벌/액션캠",
+        "en": "Sample gimbal / action cam"
+      },
+      "why": {
+        "ko": "제 숏폼 대부분 이걸로 찍어요",
+        "en": "Most of my shorts are shot on this"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    },
+    {
+      "cat": "ESSENTIAL",
+      "name": {
+        "ko": "예시 압축 파우치",
+        "en": "Sample packing cubes"
+      },
+      "why": {
+        "ko": "캐리어 공간 절반으로 줄여줌",
+        "en": "Halves the space in your luggage"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    },
+    {
+      "cat": "APP",
+      "name": {
+        "ko": "예시 여행 앱",
+        "en": "Sample travel app"
+      },
+      "why": {
+        "ko": "환율·교통 한 번에 해결",
+        "en": "Exchange rates and transit in one place"
+      },
+      "url": "#",
+      "img": "",
+      "hide": false
+    }
+  ]
+}
