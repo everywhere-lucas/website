@@ -13,6 +13,13 @@ for _k in ["channels", "videos", "guides", "items"]:
     C[_k] = [x for x in C.get(_k, []) if not x.get("hide")]   # '숨기기' 체크한 항목은 사이트에서 빼기
 SITE = C["site_url"].rstrip("/") + "/"
 PATHS = {"ko": "", "en": "en/"}
+# content.json에 첫 화면 사진(destinations)이 없을 때 쓰는 기본값
+C.setdefault("destinations", [
+    {"code": "DJN", "city": {"ko": "대전", "en": "Daejeon"}},
+    {"code": "TYO", "city": {"ko": "도쿄", "en": "Tokyo"}},
+    {"code": "OSA", "city": {"ko": "오사카", "en": "Osaka"}},
+    {"code": "PAR", "city": {"ko": "파리", "en": "Paris"}},
+])
 
 
 def L(v, lang):
@@ -41,11 +48,25 @@ def page(lang):
     pre = "../" if lang == "en" else ""
     src = lambda p: p if (not p or p.startswith("http")) else pre + p
     url = SITE + PATHS[lang]
-    share = C.get("share_image") or C.get("profile_image")
-    og_img = f'<meta property="og:image" content="{e(SITE + share)}">' if share else ""
+    share = C.get("share_image") or "images/og-default.png"   # 공유 미리보기 사진 (비워두면 기본 이미지)
+    share_url = share if share.startswith("http") else SITE + share.lstrip("/")
+    og_img = (f'<meta property="og:image" content="{e(share_url)}">\n'
+              f'<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+              f'<meta property="og:site_name" content="{e(L({"ko": "루카스 여행", "en": "Lucas Travel"}, lang))}">\n'
+              f'<meta name="twitter:image" content="{e(share_url)}">')
+
+    dests = [d for d in C.get("destinations", []) if not d.get("hide")][:4]
+    tiles = "".join(f"""
+        <figure class="tile t{i + 1}">
+          {f'<img src="{e(src(d["photo"]))}" alt="{e(L(d["city"], lang))}">' if d.get('photo') else '<span class="tile-ph"></span>'}
+          <figcaption><b>{e(d.get('code', ''))}</b>{e(L(d['city'], lang))}</figcaption>
+        </figure>""" for i, d in enumerate(dests))
+    cities = " ✈ ".join(e(L(d["city"], "en")).upper() for d in C.get("destinations", []) if not d.get("hide"))
+    marquee = f'<span>{cities} ✈ </span>' * 4
+    face = f'<img src="{e(src(C["profile_image"]))}" alt="Lucas">' if C.get("profile_image") else '<span>✈</span>'
 
     channels = "".join(f"""
-      <a class="ch{' main' if c.get('main') else ''}" {link(c['url'])}>
+      <a class="rv ch{' main' if c.get('main') else ''}" {link(c['url'])}>
         <div class="top"><span>{e(L(c['label'], lang))}</span><span class="arrow">↗</span></div>
         <div><b>{e(L(c['name'], lang))}</b><div style="font-size:13px;opacity:.7">{e(L(c['handle'], lang))}</div></div>
       </a>""" for c in C["channels"])
@@ -57,7 +78,7 @@ def page(lang):
 
     first = C["regions"][0]["id"] if C["regions"] else ""
     videos = "".join(f"""
-      <a class="vid" data-region="{e(v['region'])}"{'' if v['region'] == first else ' hidden'} {link(v['url'])}>
+      <a class="rv vid" data-region="{e(v['region'])}"{'' if v['region'] == first else ' hidden'} {link(v['url'])}>
         {f'<img src="{e(src(v["thumb"]))}" alt="{e(L(v["title"], lang))}" loading="lazy">' if v.get('thumb') else f'<span class="ph">{t["no_img"]}</span>'}
         <span class="views">▶ {fmt(v.get('views') or 0, lang)}</span>
         <div class="info">
@@ -68,13 +89,13 @@ def page(lang):
       </a>""" for v in C["videos"])
 
     guides = "".join(f"""
-      <a class="guide" {link(g['url'])}>
+      <a class="rv guide" {link(g['url'])}>
         <div class="thumb">{f'<img src="{e(src(g["img"]))}" alt="{e(L(g["title"], lang))}" loading="lazy">' if g.get('img') else t['no_img']}</div>
         <div class="t"><div class="tag">{e(g['tag'])}</div><h3>{e(L(g['title'], lang))}</h3></div>
       </a>""" for g in C["guides"])
 
     items = "".join(f"""
-      <a class="item" href="{e(it['url'])}" target="_blank" rel="noopener sponsored">
+      <a class="rv item" href="{e(it['url'])}" target="_blank" rel="noopener sponsored">
         <div class="img">{f'<img src="{e(src(it["img"]))}" alt="{e(L(it["name"], lang))}" loading="lazy">' if it.get('img') else t['no_img']}<span class="cat">{e(it['cat'])}</span></div>
         <div class="body"><h3>{e(L(it['name'], lang))}</h3><p>{e(L(it['why'], lang))}</p><div class="buy">{t['buy']}</div></div>
       </a>""" for it in C["items"])
@@ -86,6 +107,7 @@ def page(lang):
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(s['title'])}</title>
 <meta name="description" content="{e(s['description'])}">
@@ -133,16 +155,22 @@ def page(lang):
         <a class="btn ghost" href="https://instagram.com/everywhere.lucas" target="_blank" rel="noopener">Instagram ↗</a>
       </div>
     </div>
-    <div class="photo">
-      {photo}
-      <div class="badge">{t['badge']}</div>
+    <div class="collage" aria-hidden="true">
+      <svg class="flight" viewBox="0 0 400 400" preserveAspectRatio="none"><path d="M10 390 C 120 330, 60 150, 230 120 S 360 40, 392 8"/></svg>
+      <span class="plane">✈</span>{tiles}
+      <div class="stamp">
+        <svg class="ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="57"/></svg>
+        <div class="face">{face}</div>
+      </div>
     </div>
   </div>
 </header>
 
+<div class="marquee" aria-hidden="true"><div class="track">{marquee}</div></div>
+
 <section id="channels">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <div><div class="eyebrow">CHANNELS</div><h2>{t['ch_title']}</h2></div>
       <p>{t['ch_desc']}</p>
     </div>
@@ -153,7 +181,7 @@ def page(lang):
 
 <section id="videos">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <div><div class="eyebrow">BEST SHORTS</div><h2>{t['vid_title']}</h2></div>
       <p>{t['vid_desc']}</p>
     </div>
@@ -166,7 +194,7 @@ def page(lang):
 
 <section id="guides">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <div><div class="eyebrow">TRAVEL GUIDES</div><h2>{t['guide_title']}</h2></div>
       <p>{t['guide_desc']}</p>
     </div>
@@ -177,7 +205,7 @@ def page(lang):
 
 <section id="items">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <div><div class="eyebrow">TRAVEL KIT</div><h2>{t['item_title']}</h2></div>
       <p>{t['item_desc']}</p>
     </div>
@@ -189,7 +217,7 @@ def page(lang):
 
 <section id="contact" style="padding-bottom:0">
   <div class="wrap">
-    <div class="contact">
+    <div class="contact rv">
       <div>
         <h2>{t['ct_title']}</h2>
         <p>{t['ct_desc']}</p>

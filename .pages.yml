@@ -17,11 +17,27 @@ content:
         label: 문의 이메일
         type: string
       - name: profile_image
-        label: 프로필 사진
+        label: 프로필 사진 (첫 화면 회전 도장 가운데, 정사각형 추천)
         type: image
       - name: share_image
         label: 링크 공유 미리보기 사진 (가로 1200×630 권장)
         type: image
+
+      # ───────── 첫 화면 사진 콜라주 ─────────
+      - name: destinations
+        label: 첫 화면 여행 사진 (최대 4장 표시, 아래 흐르는 도시 띠에도 사용)
+        type: object
+        list: true
+        fields:
+          - { name: code, label: "도시 코드 (영어 3글자, 예: TYO)", type: string }
+          - name: city
+            label: 도시 이름
+            type: object
+            fields:
+              - { name: ko, label: 한글, type: string }
+              - { name: en, label: 영문, type: string }
+          - { name: photo, label: 여행 사진 (세로 사진 추천), type: image }
+          - { name: hide, label: 사이트에서 숨기기, type: boolean }
 
       # ───────── 채널 ─────────
       - name: channels
