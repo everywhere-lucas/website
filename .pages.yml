@@ -150,6 +150,19 @@ content:
           - { name: img, label: 상품 사진 (정사각형), type: image }
           - { name: hide, label: 사이트에서 숨기기, type: boolean }
 
+  # ───────── 사이트 문구 / 검색 설정 (가끔만 수정) ─────────
+  - name: texts
+    label: 사이트 문구 · 검색 설정
+    type: file
+    path: texts.json
+    fields:
+      - name: seo
+        ...
+      - name: text
+        label: 화면 문구 (<br>은 줄바꿈, <em>강조</em>는 형광색)
+        ...
+              - { name: hero_title, label: "첫 화면 큰 제목", type: string }
+        ...
 
   # ───────── 사이트 문구 / 검색 설정 (가끔만 수정) ─────────
   - name: texts
