@@ -321,33 +321,21 @@
     {
       "cat": "TECH",
       "name": {
-        "ko": "예시 멀티 어댑터",
-        "en": "Sample travel adapter"
+        "ko": " 멀티 어댑터",
+        "en": "Travel adapter"
       },
       "why": {
         "ko": "일본·유럽 둘 다 되는 올인원",
         "en": "One plug for both Japan and Europe"
       },
-      "url": "#",
+      "url": "https://link.coupang.com/a/hPTmRKJQey",
+      "img": "images/멀티어탭터.png",
       "hide": false
-    },
-    {
-      "cat": "TECH",
-      "name": {
-        "ko": "예시 짐벌/액션캠",
-        "en": "Sample gimbal / action cam"
-      },
-      "why": {
-        "ko": "제 숏폼 대부분 이걸로 찍어요",
-        "en": "Most of my shorts are shot on this"
-      },
-      "url": "#",
-      "hide": true
     },
     {
       "cat": "ESSENTIAL",
       "name": {
-        "ko": "예시 압축 파우치",
+        "ko": "압축 파우치",
         "en": "Sample packing cubes"
       },
       "why": {
